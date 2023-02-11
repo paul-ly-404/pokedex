@@ -13,20 +13,20 @@ Saved page:
 ![image](https://user-images.githubusercontent.com/125100028/218234184-dfc33c28-0564-4188-b6d7-a5fa74b92de6.png)
 
 
-Starting the frontend
+Starting the backend
+In `backend` folder run
+```
+npm install
+npm run start:dev
+```
 
+Starting the frontend
+In root folder run
 ```
 npm install
 npm start
 ```
 
-
-Starting the backend
-
-```
-npm install
-npm run start:dev
-```
 
 To clear the saved deck from local storage, run in browser console
 
