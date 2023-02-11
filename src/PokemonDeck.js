@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import PokemonCard from './PokemonCard';
 
 function PokemonDeck(prop) {
