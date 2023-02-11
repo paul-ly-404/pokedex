@@ -1,8 +1,4 @@
-import React, { useState } from 'react';
-
 function PokemonCard(prop) {
-
-  const [selectedCards, setSelectedCards] = useState([]);
 
   const handleAddClick = () => {
     prop.updateDeck(prop);    
