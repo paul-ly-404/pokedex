@@ -68,7 +68,7 @@ function App() {
     for (let i = deck.length; i < 5; i++) {
       placeholders.push({});
     }
-    console.log('app.js calculated placeholders ' + placeholders);
+
     setPlaceholders(placeholders);
 
     axios.get('http://localhost:3001/v1/grid/')
