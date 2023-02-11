@@ -36,4 +36,6 @@ npm start
 localStorage.clear()
 ```
 
+
+## Design Document
 Please look in the wiki for the design documentation or [here](https://github.com/paul-ly-404/pokedex/wiki/Design-Documentation).
