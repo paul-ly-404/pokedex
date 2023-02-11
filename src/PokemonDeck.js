@@ -4,12 +4,12 @@ import PokemonCard from './PokemonCard';
 function PokemonDeck(prop) {
 
     const updateDeck = (card) => {
-        console.log('added card in deck.js', card);
+        console.log('adding card to deck', card);
         prop.updateDeck(card);
       };
     
       const removeCard = (card) => {
-        console.log('remove card in deck.js', card);
+        console.log('remove card from deck', card);
         prop.removeCard(card);
       };
 
