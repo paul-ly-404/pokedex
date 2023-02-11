@@ -4,12 +4,10 @@ import PokemonDeck from './PokemonDeck';
 function PokedexGrid(prop) {
 
   const updateDeck = (card) => {
-    console.log('added card in grid.js', card);
     prop.updateDeck(card);
   };
 
   const removeCard = (card) => {
-    console.log('remove card in grid.js', card);
     prop.removeCard(card);
   };
 
