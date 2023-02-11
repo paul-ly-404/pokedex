@@ -10,7 +10,7 @@ function App() {
 
   const updateDeck = (card) => {
 
-    if (deck.filter((x) => (x.id == card.id)).length) {
+    if (deck.filter((x) => (x.id === card.id)).length) {
       console.log(card.name + ' already in deck.');
     } else {
       if (deck.length < 5) {
