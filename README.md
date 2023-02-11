@@ -28,5 +28,10 @@ npm install
 npm run start:dev
 ```
 
+To clear the saved deck from local storage, run in browser console
+
+```
+localStorage.clear()
+```
 
 Please look in the wiki for the design documentation or [here](https://github.com/paul-ly-404/pokedex/wiki/Design-Documentation).
