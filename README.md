@@ -3,7 +3,8 @@
 Starting the frontend
 
 ```
-run npm start
+npm install
+npm start
 ```
 
 Starting the backend
