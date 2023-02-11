@@ -2,6 +2,7 @@
 
 This React app with a Nest js backend allows the user to load up a set of 10 cards from a json file and select up to 5 cards into his/her deck. They can then save this deck into local storage where upon refreshing the page, their saved deck will be restored.
 
+
 Initial page:
 
 ![image](https://user-images.githubusercontent.com/125100028/218234326-28c4598b-0352-4839-9c93-ee8ce0968c40.png)
@@ -19,11 +20,13 @@ npm install
 npm start
 ```
 
+
 Starting the backend
 
 ```
 npm install
 npm run start:dev
 ```
+
 
 Please look in the wiki for the design documentation or [here](https://github.com/paul-ly-404/pokedex/wiki/Design-Documentation).
