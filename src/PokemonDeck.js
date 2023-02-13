@@ -2,9 +2,9 @@ import PokemonCard from './PokemonCard';
 
 function PokemonDeck(prop) {
 
-    const updateDeck = (card) => {
+    const addCard = (card) => {
         console.log('adding card to deck', card);
-        prop.updateDeck(card);
+        prop.addCard(card);
       };
     
       const removeCard = (card) => {
@@ -15,7 +15,7 @@ function PokemonDeck(prop) {
   return (
     <div className="pokemon-container deck">
         {(prop.deck.map((card) => (
-            <PokemonCard {...card} updateDeck={updateDeck} removeCard={removeCard}/>
+            <PokemonCard {...card} addCard={addCard} removeCard={removeCard}/>
         )))}
         {(prop.placeholders.map(() => (
              <PokemonCard/>

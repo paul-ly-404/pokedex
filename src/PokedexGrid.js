@@ -3,8 +3,8 @@ import PokemonDeck from './PokemonDeck';
 
 function PokedexGrid(prop) {
 
-  const updateDeck = (card) => {
-    prop.updateDeck(card);
+  const addCard = (card) => {
+    prop.addCard(card);
   };
 
   const removeCard = (card) => {
@@ -19,14 +19,14 @@ function PokedexGrid(prop) {
 
   return (
     <div>
-        <PokemonDeck deck={prop.deck} placeholders={prop.placeholders} updateDeck={updateDeck} removeCard={removeCard}/>
+        <PokemonDeck deck={prop.deck} placeholders={prop.placeholders} addCard={addCard} removeCard={removeCard}/>
         <button onClick={saveDeck}>Save Deck</button>
 
         <hr/>
 
         <div className="pokemon-container">
             {(prop.pokemonArray.map((pokemon) => (
-                <PokemonCard {...pokemon} updateDeck={updateDeck} />
+                <PokemonCard {...pokemon} addCard={addCard} />
             )))}
         </div>
     </div>

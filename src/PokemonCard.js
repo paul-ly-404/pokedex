@@ -1,7 +1,7 @@
 function PokemonCard(prop) {
 
   const handleAddClick = () => {
-    prop.updateDeck(prop);    
+    prop.addCard(prop);    
   };
 
   const handleRemoveClick = () => {
@@ -9,7 +9,7 @@ function PokemonCard(prop) {
   };
 
   return (
-    <div className={`pokemon-card ${prop.id ? "" : "empty"}`} data-id={prop.id} onClick={!prop.removeCard && prop.updateDeck ? handleAddClick : undefined}>
+    <div className={`pokemon-card ${prop.id ? "" : "empty"}`} data-id={prop.id} onClick={!prop.removeCard && prop.addCard ? handleAddClick : undefined}>
         <div className={prop.removeCard ? "close" : "" } style={{visibility: prop.removeCard ? 'visible' : 'hidden'}} onClick={prop.removeCard ? handleRemoveClick : undefined }>x</div>
         <img src={prop.sprite} alt={prop.name ? prop.name : ""}></img>
         

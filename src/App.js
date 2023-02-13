@@ -8,7 +8,7 @@ function App() {
   let [deck, setDeck] = useState([]);
   let [placeholders, setPlaceholders] = useState([]);
 
-  const updateDeck = (card) => {
+  const addCard = (card) => {
 
     if (deck.filter((x) => (x.id === card.id)).length) {
       console.log(card.name + ' already in deck.');
@@ -87,7 +87,7 @@ function App() {
       <h1>POKEDEX</h1>
 
       {gridData &&
-        <PokedexGrid pokemonArray={gridData} deck={deck} updateDeck={updateDeck} saveDeck={saveDeck} placeholders={placeholders} removeCard={removeCard}/>
+        <PokedexGrid pokemonArray={gridData} deck={deck} addCard={addCard} saveDeck={saveDeck} placeholders={placeholders} removeCard={removeCard}/>
       }
 
     </div>
